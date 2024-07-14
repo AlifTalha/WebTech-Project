@@ -1,0 +1,410 @@
+HTML
+
+The visible part of the HTML document is between <body> and </body>.
+The <!DOCTYPE> declaration represents the document type, and helps browsers to display web pages correctly.
+
+HTML Headings
+HTML headings are defined with the <h1> to <h6> tags.
+
+HTML Links
+<a href="https://www.w3schools.com">This is a link</a>
+The link's destination is specified in the href attribute. 
+
+
+HTML Images
+<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+same file a photo thkbe
+
+Line Break
+<br>    empty elements. Empty elements do not have an end tag!
+
+
+**HTML is Not Case Sensitive
+
+HTML Attributes
+provide additional information about elements
+always specified in the start tag
+
+There are two ways to specify the URL in the src attribute
+1)Absolute URL - Links to an external image that is hosted on another website.   Example: src="https://www.w3schools.com/images/img_girl.jpg".
+ 2) Relative URL - Links to an image that is hosted within the website.   Example: src="/images/img_girl.jpg".
+
+The alt Attribute
+The required alt attribute for the <img> tag specifies an alternate text for an image, if the image for some reason cannot be displayed.
+<img src="img_girl.jpg" alt="Girl with a jacket">
+
+
+
+The style Attribute
+The style attribute is used to add styles to an element, such as color, font, size, and more.
+<p style="color:red;">This is a red paragraph.</p>
+
+The lang Attribute
+This is meant to assist search engines and browsers.
+first two characters define the language of the HTML page, and the last two characters define the country.
+<html lang="en-US">
+
+
+The title Attribute
+title attribute defines some extra information about an element.
+
+
+Single or Double Quotes?
+Double quotes around attribute values are the most common in HTML, but single quotes can also be used.
+
+
+Bigger Headings
+<h1 style="font-size:60px;">Heading 1</h1>
+
+HTML Horizontal Rules
+<hr> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.
+<hr> element is used to separate content ,empty tag
+
+
+ The HTML <pre> Element
+<pre> element defines preformatted text.displayed in a fixed-width font
+
+
+Background Color
+defines the background color for an HTML element.
+Ext:<body style="background-color:powderblue;">
+
+Fonts
+font-family property defines the font to be used for an HTML element
+<h1 style="font-family:verdana;">This is a heading</h1>
+
+
+Text Size
+font-size property defines the text size for an HTML element
+h1 style="font-size:300%;">This is a heading</h1>
+
+
+Text Alignment
+text-align property defines the horizontal text alignment for an HTML element
+<h1 style="text-align:center;">Centered Heading</h1>
+
+
+HTML Text Formatting
+
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text    <p>Do not forget to buy <mark>milk</mark> today.</p>
+<small> - Smaller text
+<del> - Deleted text
+<ins> - Inserted text  <p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+
+<sub> - Subscript text
+<sup> - Superscript text
+
+
+HTML Quotation and Citation Elements: 
+<blockquote>,<q>, <abbr>, <address>, <cite>, and <bdo>
+
+<blockquote>
+<blockquote> element defines a section that is quoted from another source.
+Browsers usually indent <blockquote> elements.
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+
+
+<q> 
+<q> tag defines a short quotation.
+Browsers normally insert quotation marks around the quotation.
+<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+
+HTML <abbr> for Abbreviations
+<abbr> tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr."
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+
+HTML <address> for Contact Information
+<address> tag defines the contact information for the author/owner of a document or an article.
+
+<address>
+Written by John Doe.<br>
+Visit us at:<br>
+USA
+</address>
+
+
+HTML Comments
+<!-- Write your comments here -->
+Comments can be used to hide content.
+
+
+
+HTML Colors
+Background Color
+<h1 style="background-color:DodgerBlue;">Hello World</h1>
+
+Text Color
+<h1 style="color:Tomato;">Hello World</h1>
+
+Border Color
+<h1 style="border:2px solid Tomato;">Hello World</h1>
+
+Color Values
+<h1 style="background-color:rgb(255, 99, 71);">...</h1>
+
+
+CSS stands for Cascading Style Sheets.
+control the layout of multiple web pages all at once.used to format the layout of a webpage.
+
+Inline - by using the style attribute inside HTML elements
+Internal - by using a <style> element in the <head> section
+External - by using a <link> element to link to an external CSS file
+External:
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+CSS Colors, Fonts and Sizes
+color property defines the text color to be used.
+font-family property defines the font to be used.
+font-size property defines the text size to be used.
+
+h1 {
+  color: blue;
+  font-family: verdana;
+  font-size: 300%;
+}
+
+
+CSS Padding
+padding property defines a padding (space) between the text and the border.
+p {
+  border: 2px solid powderblue;
+  padding: 30px;
+}
+
+
+
+HTML Links
+<a> tag defines a hyperlink. 
+<a href="url">link text</a>
+
+An unvisited link is underlined and blue
+A visited link is underlined and purple
+An active link is underlined and red
+
+target attribute specifies where to open the linked document.
+_self - Default. Opens the document in the same window/tab as it was clicked
+_blank - Opens the document in a new window or tab
+_parent - Opens the document in the parent frame
+_top - Opens the document in the full body of the window
+
+
+HTML Links - Use an Image as a Link
+<a href="default.asp">
+<img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a>
+
+
+Link to an Email Address
+Use mailto: inside the href attribute to create a link that opens the user's email program
+<a href="mailto:someone@example.com">Send email</a>
+
+
+
+Button as a Link
+<button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+
+
+HTML Links - Different Colors
+
+<style>
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+
+
+
+HTML Images
+<img src="pic_trulli.jpg" alt="Italian Trulli">
+
+<img> tag is used to embed an image in a web page.
+src - Specifies the path to the image
+alt - Specifies an alternate text for the image
+<img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+
+
+Image as a Link
+<a href="default.asp">
+  <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a>
+
+Background Image on a HTML element
+<p style="background-image: url('img_girl.jpg');">
+
+
+
+HTML Favicon
+A favicon is a small image displayed next to the page title in the browser tab.
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+
+HTML Tables
+arrange data into rows and columns.
+
+Table Cells
+Each table cell is defined by a <td> and a </td> tag.(td stands for table data.)
+Each table row starts with a <tr> and ends with a </tr> tag.
+tr stands for table row.
+
+th stands for table header. <th> </th>
+By default, the text in <th> elements are bold and centered
+
+
+Style Table Borders
+
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+th, td {
+  background-color: #96D4D4;
+}
+
+Round Table Borders
+table, th, td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+
+th, td {
+  border-style: dotted;
+}
+
+
+HTML Table Padding & Spacing
+Cell padding is the space between the cell edges and the cell content.
+By default the padding is set to 0.
+th, td {
+  padding: 15px;
+}
+
+
+th, td {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+
+HTML Table - Cell Spacing
+Cell spacing is the space between each cell.
+By default the space is set to 2 pixels
+
+table {
+  border-spacing: 30px;
+}
+
+
+
+HTML Table Styling
+use the :nth-child(even) selector 
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+
+
+
+HTML Div Element
+<div> element is used as a container for other HTML elements.
+<div> element is often used to group sections of a web page together.
+
+If you have a <div> element that is not 100% wide, and you want to center-align it, set the CSS margin property to auto.
+
+<style>
+div {
+  width:300px;
+  margin:auto;
+}
+</style>
+
+
+Float
+CSS float property is used for positioning and formatting content and allow elements float next to each other instead of on top of each other.
+
+
+
+HTML class Attribute
+class attribute is used to specify a class for an HTML element.
+Multiple HTML elements can share the same class.
+ class name is case sensitive!
+To create a class; write a period (.) character, followed by a class name. Then, define the CSS properties within curly braces {}:
+JavaScript can access elements with a specific class name with the getElementsByClassName() method:
+
+
+HTML id Attribute
+id attribute is used to specify a unique id for an HTML element.
+id attribute must be unique within the HTML document.
+
+The syntax for id is: write a hash character (#), followed by an id name. Then, define the CSS properties within curly braces {}.
+The id name is case sensitive!
+
+HTML bookmarks are used to allow readers to jump to specific parts of a webpage.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p><a href="#C4">Jump to Chapter 4</a></p>
+<p><a href="#C10">Jump to Chapter 10</a></p>
+
+<h2>Chapter 1</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 2</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 3</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C4">Chapter 4</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 5</h2>
+<p>This chapter explains ba bla bla</p>
+
+JavaScript can access an element with a specific id with the getElementById() method
+
+
+
+HTML JavaScript
+<script> tag is used to define a client-side script (JavaScript).
+
+
+
+
+
+
+
+
+
